@@ -44,6 +44,11 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .project-title {
             font-family: 'Montserrat', sans-serif;
@@ -57,6 +62,28 @@
         }
         .project-title a:hover {
             text-decoration: underline;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            color: #333333;
+        }
+        .contact a {
+            margin: 0 10px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -75,6 +102,19 @@
                 <h2 class="project-title"><a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM">Modelo Clasificador de Correos SPAM</a></h2>
                 <p>Regresión Logística y Gaussian Naive Bayes.</p>
             </div>
+        </div>
+        <div class="contact">
+            <h2>Contacta Conmigo</h2>
+            <a href="https://www.linkedin.com/in/felipe-catalán/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40">
+            </a>
+            <a href="mailto:felipecatalanf9@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email" width="40">
+            </a>
+        </div>
+        <div class="gallery">
+            <img src="project1.png" alt="Proyecto 1" width="300">
+            <img src="project2.png" alt="Proyecto 2" width="300">
         </div>
     </div>
 </body>
