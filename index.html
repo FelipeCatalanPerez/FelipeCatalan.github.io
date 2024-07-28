@@ -46,6 +46,8 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            text-decoration: none;
+            color: inherit;
         }
         .project:hover {
             transform: translateY(-5px);
@@ -56,13 +58,6 @@
             font-size: 1.5em;
             margin: 10px 0;
             color: #007acc;
-        }
-        .project-title a {
-            text-decoration: none;
-            color: #007acc;
-        }
-        .project-title a:hover {
-            text-decoration: underline;
         }
         .project img {
             margin: 10px 0;
@@ -125,16 +120,16 @@
             <p>Ingeniero Comercial y Analista de Datos</p>
         </div>
         <div class="projects">
-            <div class="project">
-                <h2 class="project-title"><a href="https://github.com/FelipeCatalanPerez/CNN_SUV">CNN_SUV</a></h2>
+            <a href="https://github.com/FelipeCatalanPerez/CNN_SUV" class="project">
+                <h2 class="project-title">CNN_SUV</h2>
                 <img src="CNN_imagen1.png" alt="Proyecto 1">
                 <p>Modelo clasificador basado en Deep Learning.</p>
-            </div>
-            <div class="project">
-                <h2 class="project-title"><a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM">Modelo Clasificador de Correos SPAM</a></h2>
+            </a>
+            <a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM" class="project">
+                <h2 class="project-title">Modelo Clasificador de Correos SPAM</h2>
                 <img src="GausianLogistic.png" alt="Proyecto 2">
                 <p>Regresión Logística y Gaussian Naive Bayes.</p>
-            </div>
+            </a>
         </div>
         <div class="contact">
             <h2>Contacta Conmigo</h2>
