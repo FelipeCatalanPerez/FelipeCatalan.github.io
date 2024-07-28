@@ -14,7 +14,8 @@
             color: #333333;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
         }
@@ -78,12 +79,51 @@
         .gallery {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
         .gallery img {
             margin: 10px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .project-title {
+                font-size: 1.2em;
+            }
+            .contact h2 {
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .header p {
+                font-size: 0.9em;
+            }
+            .project-title {
+                font-size: 1em;
+            }
+            .contact h2 {
+                font-size: 1.2em;
+            }
+            .gallery img {
+                width: 100%;
+                max-width: 200px;
+            }
         }
     </style>
 </head>
