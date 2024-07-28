@@ -64,6 +64,12 @@
         .project-title a:hover {
             text-decoration: underline;
         }
+        .project img {
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
         .contact {
             text-align: center;
             margin-top: 40px;
@@ -75,17 +81,6 @@
         }
         .contact a {
             margin: 0 10px;
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .gallery img {
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         @media (max-width: 768px) {
             .projects {
@@ -120,10 +115,6 @@
             .contact h2 {
                 font-size: 1.2em;
             }
-            .gallery img {
-                width: 100%;
-                max-width: 200px;
-            }
         }
     </style>
 </head>
@@ -136,10 +127,12 @@
         <div class="projects">
             <div class="project">
                 <h2 class="project-title"><a href="https://github.com/FelipeCatalanPerez/CNN_SUV">CNN_SUV</a></h2>
+                <img src="CNN_imagen1.png" alt="Proyecto 1">
                 <p>Modelo clasificador basado en Deep Learning.</p>
             </div>
             <div class="project">
                 <h2 class="project-title"><a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM">Modelo Clasificador de Correos SPAM</a></h2>
+                <img src="GausianLogistic.png" alt="Proyecto 2">
                 <p>Regresión Logística y Gaussian Naive Bayes.</p>
             </div>
         </div>
@@ -151,10 +144,6 @@
             <a href="mailto:felipecatalanf9@gmail.com">
                 <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email" width="40">
             </a>
-        </div>
-        <div class="gallery">
-            <img src="CNN_imagen1.png" alt="Proyecto 1" width="300">
-            <img src="GausianLogistic.png" alt="Proyecto 2" width="300">
         </div>
     </div>
 </body>
