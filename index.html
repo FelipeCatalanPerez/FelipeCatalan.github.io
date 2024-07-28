@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos de Felipe Catalán</title>
+    <title>Felipe Ignacio Catalán Perez</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
@@ -39,6 +39,32 @@
             font-size: 1.2em;
             margin-top: 10px;
             color: #666666;
+        }
+        .header .description {
+            font-size: 1em;
+            margin-top: 20px;
+            color: #555555;
+            text-align: justify;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #444444;
+            border-radius: 10px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #666666;
+            border-radius: 5px;
         }
         .projects {
             margin: 20px 0;
@@ -80,6 +106,18 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            color: #333333;
+        }
+        .contact a {
+            margin: 0 10px;
+        }
         @media (max-width: 768px) {
             .projects {
                 grid-template-columns: 1fr;
@@ -91,6 +129,9 @@
                 font-size: 1em;
             }
             .project-title {
+                font-size: 1.5em;
+            }
+            .contact h2 {
                 font-size: 1.5em;
             }
         }
@@ -107,26 +148,40 @@
             .project-title {
                 font-size: 1.2em;
             }
+            .contact h2 {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Sección de encabezado con título y descripción -->
+        <!-- Sección de encabezado con nombre y título -->
         <div class="header">
             <div class="header-content">
-                <h1>Proyectos Personales</h1>
-                <p>Aquí puedes ver algunos de los proyectos en los que he trabajado, aplicando técnicas avanzadas de análisis de datos y machine learning.</p>
+                <h1>Felipe Catalán</h1>
+                <p>Ingeniero Comercial y Analista de Datos</p>
+                <!-- Descripción personal añadida -->
+                <p class="description">Soy un apasionado del análisis de datos con una sólida experiencia en proyectos de machine learning y ciencia de datos. Mi objetivo es transformar datos en información valiosa para la toma de decisiones estratégicas. He trabajado en una variedad de proyectos, desde la clasificación de imágenes utilizando redes neuronales convolucionales hasta la detección de correos SPAM con modelos de regresión logística y Gaussian Naive Bayes. Mi enfoque se centra en la optimización de procesos y la implementación de soluciones innovadoras que generen valor agregado.</p>
             </div>
         </div>
         
+        <!-- Barra de navegación -->
+        <div class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#conocimientos">Conocimientos</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
         <!-- Sección de proyectos -->
         <div class="projects">
             <!-- Proyecto 1 -->
             <a href="https://github.com/FelipeCatalanPerez/CNN_SUV" class="project">
                 <h2 class="project-title">Clasificador de Autos SUV</h2>
                 <h3 class="project-subtitle">Red Neuronal Convolucional</h3>
-                <img src="CNN_imagen1.png" alt="Clasificador de Autos SUV">
+                <img src="CNN_imagen1.png" alt="Proyecto 1">
                 <p>Este modelo utiliza una red neuronal convolucional (CNN) para clasificar imágenes de autos en dos categorías: SUV y otros tipos de autos. La CNN fue entrenada con una base de datos de imágenes de vehículos, aprendiendo a identificar características visuales distintivas que diferencian a los SUVs del resto de los vehículos. Las redes neuronales convolucionales son particularmente eficaces para tareas de clasificación de imágenes debido a su capacidad para capturar y reconocer patrones complejos en los datos visuales.</p>
             </a>
             
@@ -134,8 +189,19 @@
             <a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM" class="project">
                 <h2 class="project-title">Clasificador de Correos SPAM</h2>
                 <h3 class="project-subtitle">Regresión Logística y Gaussian Naive Bayes</h3>
-                <img src="GausianLogistic.png" alt="Clasificador de Correos SPAM">
+                <img src="GausianLogistic.png" alt="Proyecto 2">
                 <p>Este modelo está diseñado para clasificar correos electrónicos como SPAM o no SPAM utilizando dos enfoques de aprendizaje automático: regresión logística y Gaussian Naive Bayes. La base de datos utilizada para este modelo es tabular y fue obtenida de una fuente en línea. La regresión logística es un modelo lineal que estima la probabilidad de que un correo sea SPAM basado en las características del texto, mientras que el Gaussian Naive Bayes asume que las características siguen una distribución normal y utiliza esta suposición para clasificar los correos electrónicos. La combinación de ambos modelos proporciona una robusta capacidad de clasificación.</p>
+            </a>
+        </div>
+
+        <!-- Sección de contacto -->
+        <div class="contact">
+            <h2>Contacta Conmigo</h2>
+            <a href="https://www.linkedin.com/in/felipe-catalán/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40">
+            </a>
+            <a href="mailto:felipecatalanf9@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email" width="40">
             </a>
         </div>
     </div>
