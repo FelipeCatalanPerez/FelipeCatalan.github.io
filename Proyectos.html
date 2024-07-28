@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Felipe Catalán</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            margin: 0;
+            color: #444444;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #666666;
+        }
+        .projects {
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .project {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            text-decoration: none;
+            color: inherit;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .project-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            margin: 10px 0;
+            color: #333333;
+        }
+        .project-subtitle {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #666666;
+        }
+        .project p {
+            text-align: justify;
+        }
+        .project img {
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .project-title {
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 0.9em;
+            }
+            .project-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección de encabezado con título y descripción -->
+        <div class="header">
+            <div class="header-content">
+                <h1>Proyectos Personales</h1>
+                <p>Aquí puedes ver algunos de los proyectos en los que he trabajado, aplicando técnicas avanzadas de análisis de datos y machine learning.</p>
+            </div>
+        </div>
+        
+        <!-- Sección de proyectos -->
+        <div class="projects">
+            <!-- Proyecto 1 -->
+            <a href="https://github.com/FelipeCatalanPerez/CNN_SUV" class="project">
+                <h2 class="project-title">Clasificador de Autos SUV</h2>
+                <h3 class="project-subtitle">Red Neuronal Convolucional</h3>
+                <img src="CNN_imagen1.png" alt="Clasificador de Autos SUV">
+                <p>Este modelo utiliza una red neuronal convolucional (CNN) para clasificar imágenes de autos en dos categorías: SUV y otros tipos de autos. La CNN fue entrenada con una base de datos de imágenes de vehículos, aprendiendo a identificar características visuales distintivas que diferencian a los SUVs del resto de los vehículos. Las redes neuronales convolucionales son particularmente eficaces para tareas de clasificación de imágenes debido a su capacidad para capturar y reconocer patrones complejos en los datos visuales.</p>
+            </a>
+            
+            <!-- Proyecto 2 -->
+            <a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM" class="project">
+                <h2 class="project-title">Clasificador de Correos SPAM</h2>
+                <h3 class="project-subtitle">Regresión Logística y Gaussian Naive Bayes</h3>
+                <img src="GausianLogistic.png" alt="Clasificador de Correos SPAM">
+                <p>Este modelo está diseñado para clasificar correos electrónicos como SPAM o no SPAM utilizando dos enfoques de aprendizaje automático: regresión logística y Gaussian Naive Bayes. La base de datos utilizada para este modelo es tabular y fue obtenida de una fuente en línea. La regresión logística es un modelo lineal que estima la probabilidad de que un correo sea SPAM basado en las características del texto, mientras que el Gaussian Naive Bayes asume que las características siguen una distribución normal y utiliza esta suposición para clasificar los correos electrónicos. La combinación de ambos modelos proporciona una robusta capacidad de clasificación.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
