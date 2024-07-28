@@ -10,7 +10,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2E8B57; /* Cambia este color */
+            background-color: #2E8B57;
             color: #333333;
         }
         .container {
@@ -108,6 +108,24 @@
                 font-size: 1.2em;
             }
         }
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FF4500;
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        }
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            background-color: #FF6347;
+        }
     </style>
 </head>
 <body>
@@ -164,5 +182,6 @@
             
         </div>
     </div>
+    <a href="https://felipecatalanperez.github.io/FelipeCatalan.github.io/" class="back-to-home">Volver a Inicio</a>
 </body>
 </html>
