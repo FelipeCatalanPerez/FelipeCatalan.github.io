@@ -35,6 +35,12 @@
             margin-top: 10px;
             color: #666666;
         }
+        .header .description {
+            font-size: 1em;
+            margin-top: 20px;
+            color: #555555;
+            text-align: justify;
+        }
         .projects {
             margin: 20px 0;
             display: grid;
@@ -125,17 +131,25 @@
 </head>
 <body>
     <div class="container">
+        <!-- Sección de encabezado con nombre y título -->
         <div class="header">
             <h1>Felipe Catalán</h1>
             <p>Ingeniero Comercial y Analista de Datos</p>
+            <!-- Descripción personal añadida -->
+            <p class="description">Soy un apasionado del análisis de datos con experiencia en proyectos de machine learning y ciencia de datos. Mi objetivo es transformar datos en información valiosa para la toma de decisiones estratégicas. He trabajado en proyectos que van desde la clasificación de imágenes utilizando redes neuronales convolucionales hasta la detección de correos SPAM con modelos de regresión logística y Gaussian Naive Bayes.</p>
         </div>
+        
+        <!-- Sección de proyectos -->
         <div class="projects">
+            <!-- Proyecto 1 -->
             <a href="https://github.com/FelipeCatalanPerez/CNN_SUV" class="project">
                 <h2 class="project-title">Clasificador de Autos SUV</h2>
                 <h3 class="project-subtitle">Red Neuronal Convolucional</h3>
                 <img src="CNN_imagen1.png" alt="Proyecto 1">
                 <p>Este modelo utiliza una red neuronal convolucional (CNN) para clasificar imágenes de autos en dos categorías: SUV y otros tipos de autos. La CNN fue entrenada con una base de datos de imágenes de vehículos, aprendiendo a identificar características visuales distintivas que diferencian a los SUVs del resto de los vehículos. Las redes neuronales convolucionales son particularmente eficaces para tareas de clasificación de imágenes debido a su capacidad para capturar y reconocer patrones complejos en los datos visuales.</p>
             </a>
+            
+            <!-- Proyecto 2 -->
             <a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM" class="project">
                 <h2 class="project-title">Clasificador de Correos SPAM</h2>
                 <h3 class="project-subtitle">Regresión Logística y Gaussian Naive Bayes</h3>
@@ -143,6 +157,8 @@
                 <p>Este modelo está diseñado para clasificar correos electrónicos como SPAM o no SPAM utilizando dos enfoques de aprendizaje automático: regresión logística y Gaussian Naive Bayes. La base de datos utilizada para este modelo es tabular y fue obtenida de una fuente en línea. La regresión logística es un modelo lineal que estima la probabilidad de que un correo sea SPAM basado en las características del texto, mientras que el Gaussian Naive Bayes asume que las características siguen una distribución normal y utiliza esta suposición para clasificar los correos electrónicos. La combinación de ambos modelos proporciona una robusta capacidad de clasificación.</p>
             </a>
         </div>
+
+        <!-- Sección de contacto -->
         <div class="contact">
             <h2>Contacta Conmigo</h2>
             <a href="https://www.linkedin.com/in/felipe-catalán/" target="_blank">
