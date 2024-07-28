@@ -111,6 +111,10 @@
         .contact {
             text-align: center;
             margin-top: 40px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .contact h2 {
             font-family: 'Montserrat', sans-serif;
@@ -119,9 +123,15 @@
         }
         .contact a {
             margin: 0 10px;
+            text-decoration: none;
         }
         .contact img {
             width: 40px;
+            margin: 10px 20px;
+            transition: transform 0.3s ease;
+        }
+        .contact img:hover {
+            transform: scale(1.1);
         }
         @media (max-width: 768px) {
             .projects {
@@ -213,16 +223,6 @@
         </div>
 
         <!-- Sección de contacto -->
-        <style>
-            .contact a {
-                text-decoration: none;
-            }
-        
-            .contact img {
-                margin: 0 10px;
-            }
-        </style>
-        
         <div class="contact">
             <h2>Contacta Conmigo</h2>
             <a href="https://www.linkedin.com/in/felipe-catalán/" target="_blank">
