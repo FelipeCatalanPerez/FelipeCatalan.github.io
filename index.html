@@ -333,13 +333,13 @@
         </style>
 
 
-        <!-- Sección Spoiler de proyectos destacados -->
+        <!-- Sección de Proyectos -->
         <div id="projects" class="projects">
             <h2 class="section-title">Proyectos Destacados</h2>
             <div style="margin-bottom: 20px;"></div> <!-- Espacio pequeño después del título -->
             <div class="projects-grid">
                 <!-- Proyecto 1 -->
-                <a href="https://github.com/FelipeCatalanPerez/CNN_SUV" class="project" style="background: linear-gradient(135deg, #A9CFE2 0%, #FFFFFF 100%);">
+                <a href="https://github.com/FelipeCatalanPerez/CNN_SUV" class="project" style="background: #fff;">
                     <h3 class="project-title">Clasificador de Autos SUV</h3>
                     <h4 class="project-subtitle">Red Neuronal Convolucional</h4>
                     <img src="CNN_imagen1.png" alt="Proyecto 1">
@@ -347,7 +347,7 @@
                 </a>
                 
                 <!-- Proyecto 2 -->
-                <a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM" class="project" style="background: linear-gradient(135deg, #D3D3D3 0%, #FFFFFF 100%);">
+                <a href="https://github.com/FelipeCatalanPerez/Modelo-clasificador-de-correos-SPAM" class="project" style="background: #fff;">
                     <h3 class="project-title">Clasificador de Correos SPAM</h3>
                     <h4 class="project-subtitle">Regresión Logística y Gaussian Naive Bayes</h4>
                     <img src="GausianLogistic.png" alt="Proyecto 2">
@@ -355,6 +355,47 @@
                 </a>
             </div>
         </div>
+        
+        <style>
+            .projects-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .project {
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                text-decoration: none;
+                color: inherit;
+                background: #fff;
+            }
+            .project:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            .project-title {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+                margin: 10px 0;
+                color: #333333;
+            }
+            .project-subtitle {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.1em;
+                margin: 5px 0;
+                color: #666666;
+            }
+            .project img {
+                margin: 10px 0;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+
 
         <!-- Sección de contacto -->
         <div class="contact">
