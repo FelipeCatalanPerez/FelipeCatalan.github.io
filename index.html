@@ -34,17 +34,17 @@
         }
         .header h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
             color: #444444;
         }
         .header p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-top: 10px;
             color: #666666;
         }
         .header .description {
-            font-size: 1em;
+            font-size: 1.1em;
             margin-top: 20px;
             color: #555555;
             text-align: center;
@@ -65,7 +65,7 @@
             color: #ffffff;
             padding: 15px 25px;
             margin: 0 15px;
-            font-size: 1.2em;
+            font-size: 1.3em;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .navbar a:hover {
@@ -90,8 +90,8 @@
             color: #333333;
         }
         .about p, .skills p, .project p {
-            text-align: center;
-            font-size: 1em;
+            text-align: justify;
+            font-size: 1.1em;
             color: #555555;
         }
 
@@ -234,24 +234,13 @@
             }
         }
 
-        /* Botón para ver más proyectos */
-        .button-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .project-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: #ffffff;
-            background-color: #444444;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .project-button:hover {
-            background-color: #555555;
-            transform: scale(1.05);
+        /* Estilos para la foto en Sobre Mí */
+        .about-photo {
+            margin: 20px auto;
+            display: block;
+            width: 150px; /* Puedes ajustar el tamaño de la imagen aquí */
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -276,6 +265,7 @@
         <!-- Sección Sobre Mí -->
         <div id="about" class="about">
             <h2 class="section-title">Sobre Mí</h2>
+            <img src="Foto_Felipe.png" alt="Foto de Felipe Catalán" class="about-photo">
             <p>Soy Felipe Catalán, Ingeniero Comercial y Analista de Datos. Mi objetivo es mostrar mis habilidades en programación y análisis de datos para mejorar mis opciones de empleabilidad. Tengo experiencia en diversos proyectos de ciencia de datos, incluyendo estadística descriptiva, machine learning y redes neuronales.</p>
         </div>
 
@@ -315,11 +305,11 @@
                     </div>
                 </div>
                 <div class="skill-item">
-                    <h3>Integración de Herramientas</h3>
-                    <p>Google Sheets, Jira, ChatGPT</p>
+                    <h3>Uso de Herramientas</h3>
+                    <p>SAP, Excel, ChatGPT</p>
                     <div class="icons">
-                        <img src="https://static-00.iconduck.com/assets.00/apps-google-sheets-icon-2048x2044-j8oe3a79.png" alt="Google Sheets" width="40" height="40">
-                        <img src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" alt="Jira" width="40" height="40">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/2560px-SAP_2011_logo.svg.png" alt="SAP" width="40" height="40">
+                        <img src="https://e7.pngegg.com/pngimages/108/891/png-clipart-microsoft-excel-computer-icons-export-microsoft-angle-logo-thumbnail.png" alt="Excel" width="40" height="40">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png" alt="ChatGPT" width="40" height="40">
                     </div>
                 </div>
@@ -354,6 +344,28 @@
                 </a>
             </div>
         </div>
+        
+        <style>
+            .button-container {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .project-button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 1.2em;
+                color: #ffffff;
+                background-color: #444444;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+            .project-button:hover {
+                background-color: #555555;
+                transform: scale(1.05);
+            }
+        </style>
+
 
         <!-- Sección de contacto -->
         <div class="contact">
