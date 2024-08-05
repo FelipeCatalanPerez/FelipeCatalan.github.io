@@ -242,6 +242,19 @@
             border-radius: 50%;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .about-photo {
+            width: 150px; /* Ajusta el tamaño de la imagen aquí */
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -265,9 +278,12 @@
         <!-- Sección Sobre Mí -->
         <div id="about" class="about">
             <h2 class="section-title">Sobre Mí</h2>
-            <img src="Foto_Felipe.png" alt="Foto de Felipe Catalán" class="about-photo">
-            <p>Soy Felipe Catalán, Ingeniero Comercial y Analista de Datos. Mi objetivo es mostrar mis habilidades en programación y análisis de datos para mejorar mis opciones de empleabilidad. Tengo experiencia en diversos proyectos de ciencia de datos, incluyendo estadística descriptiva, machine learning y redes neuronales.</p>
+            <div class="about-content">
+                <img src="Foto_Felipe.png" alt="Foto de Felipe Catalán" class="about-photo">
+                <p>Soy Felipe Catalán, Ingeniero Comercial y Analista de Datos. Mi objetivo es mostrar mis habilidades en programación y análisis de datos para mejorar mis opciones de empleabilidad. Tengo experiencia en diversos proyectos de ciencia de datos, incluyendo estadística descriptiva, machine learning y redes neuronales.</p>
+            </div>
         </div>
+
 
         <!-- Sección Conocimientos -->
         <div id="skills" class="skills">
